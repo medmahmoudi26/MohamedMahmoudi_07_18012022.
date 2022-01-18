@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f98c9ed341.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Les Petits Plats | Accueil</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png" alt="Logo du site"></a>
+    </header>
+
+    <main>
+        <div class="search">
+            <div class="search__bar">
+                <input type="text" name="searchBar" id="searchBar" placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="filtersAndTagsContainer">
+
+                <div class="search__tags"></div>
+
+                <div class="search__options">
+                    <div class="search__options__category search__options__category--ingredients" id="ingredientContainer">
+                        <div class="search__options__category__interactive">
+                            <input type="text" name="ingredients" id="inputIngredients" placeholder="Ingrédients"><i id="ingredientsListIcon" class="fas fa-chevron-down fa-lg"></i>
+                        </div>
+                        <div id="ingredients"></div>
+                    </div>
+                    <div class="search__options__category search__options__category--appliances" id="appliancesContainer">
+                        <div class="search__options__category__interactive">
+                            <input type="text" name="appliances" id="inputAppliances" placeholder="Appareils"><i id="appliancesListIcon" class="fas fa-chevron-down fa-lg"></i>
+                        </div>
+                        <div id="appliances"></div>
+                    </div>
+                    <div class="search__options__category search__options__category--utensils" id="utensilsContainer">
+                        <div class="search__options__category__interactive">
+                            <input type="text" name="utensils" id="inputUtensils" placeholder="Ustensiles"><i id="utensilsListIcon" class="fas fa-chevron-down fa-lg"></i>
+                        </div>
+                        <div id="utensils"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="message">
+            <br />
+            <h2>Aucune recette ne correspond à votre recherche...</h2>
+            
+        </div>
+
+        <div class="recipies" id="recipies"></div>
+    </main>
+    <script src="/assets/javascript/main.js" type="module"></script>
+</body>
+
+</html>
