@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f98c9ed341.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" href="./assets/img/logo/favicon.png" />
     <title>Les Petits Plats | Accueil</title>
 </head>
 
@@ -16,48 +17,43 @@
     </header>
 
     <main>
-        <div class="search">
+        <section class="search">
             <div class="search__bar">
                 <input type="text" name="searchBar" id="searchBar" placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette">
                 <i class="fas fa-search"></i>
             </div>
 
-            <div class="filtersAndTagsContainer">
+            <div class="search__tags">
+            </div>
 
-                <div class="search__tags"></div>
-
-                <div class="search__options">
-                    <div class="search__options__category search__options__category--ingredients" id="ingredientContainer">
-                        <div class="search__options__category__interactive">
-                            <input type="text" name="ingredients" id="inputIngredients" placeholder="Ingrédients"><i id="ingredientsListIcon" class="fas fa-chevron-down fa-lg"></i>
-                        </div>
-                        <div id="ingredients"></div>
-                    </div>
-                    <div class="search__options__category search__options__category--appliances" id="appliancesContainer">
-                        <div class="search__options__category__interactive">
-                            <input type="text" name="appliances" id="inputAppliances" placeholder="Appareils"><i id="appliancesListIcon" class="fas fa-chevron-down fa-lg"></i>
-                        </div>
-                        <div id="appliances"></div>
-                    </div>
-                    <div class="search__options__category search__options__category--utensils" id="utensilsContainer">
-                        <div class="search__options__category__interactive">
-                            <input type="text" name="utensils" id="inputUtensils" placeholder="Ustensiles"><i id="utensilsListIcon" class="fas fa-chevron-down fa-lg"></i>
-                        </div>
-                        <div id="utensils"></div>
-                    </div>
+            <div class="search__options">
+                <div class="search__options--ingredients">
+                    <button id="ingredients">
+                        <span>Ingrédients</span><i class="fas fa-chevron-down fa-lg"></i>
+                    </button>
+                </div>
+                <div class="search__options--appliances">
+                    <button id="appliances">
+                        <span>Appareil</span><i class="fas fa-chevron-down fa-lg"></i>
+                    </button>
+                </div>
+                <div class="search__options--utensils">
+                    <button id="utensils">
+                        <span>Ustensiles</span><i class="fas fa-chevron-down fa-lg"></i>
+                    </button>
                 </div>
             </div>
-        </div>
+        </section>
 
         <div id="message">
-            <br />
+            <br/>
             <h2>Aucune recette ne correspond à votre recherche...</h2>
-            
+            <p>Vous pouvez essayer de chercher d'autres mots-clés comme « <span>tarte aux pommes</span> », « <span>poisson</span> », <br/>ou découvrir de nouvelles recettes à l'aide de nos <span>filtres de recherche</span>.</p>
         </div>
 
-        <div class="recipies" id="recipies"></div>
+        <section class="recipies" id="recipies"></section>
     </main>
-    <script src="/assets/javascript/main.js" type="module"></script>
+    <script src="./assets/javascript/main.js" type="module"></script>
 </body>
 
 </html>
