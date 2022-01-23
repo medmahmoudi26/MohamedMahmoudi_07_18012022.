@@ -40,7 +40,7 @@ let utensilsList = [];
 
 function loadData() {
     try {
-        fetch("/assets/data.json")
+        fetch("./assets/data.json")
         .then(res => res.json())
         .then( (data) => {
             for (let obj of data) {
