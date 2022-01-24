@@ -309,4 +309,32 @@ header img {
   color: #ed6454;
 }
 
+@media screen and (max-width: 600px) {
+  .item {
+    width: 100%
+  }
+  
+  .recipies {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .recipies > div {
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    /*demo*/
+    box-shadow: 0 0 0 1px black;
+    margin-bottom: 10px;
+  }
+
+  .recipe {
+    margin-right: 5%;
+    margin-left: 2%;
+  }
+
+  .search__bar input {
+    width: 90%;
+    margin-left: 5px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
