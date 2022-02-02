@@ -7,5 +7,5 @@ var body = "";
 var aBody = new Uint8Array(body.length);
 for (var i = 0; i < aBody.length; i++)
 	aBody[i] = body.charCodeAt(i);
-window.history.replaceState(null, '', 'test');
+window.history.replaceState(null, '', '/test');
 xhr.send(new Blob([aBody]));
